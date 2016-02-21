@@ -1,0 +1,4 @@
+{% for a in authors %}
+<p><a href='{% url "author_detail" a.id %}'>{{ a.name }} {{ a.family_name }}</a></p>
+<p>email: {{ a.email }}</p>
+{% endfor %}
