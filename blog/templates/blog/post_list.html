@@ -1,4 +1,4 @@
-{% for p in posts %}
+{% for p in post_list %}
     <h4><a href='{% url "post_detail" p.id %}'>{{ p.title }}</a></h4>
     <small>{{ p.author }} - {{ p.date|date:"D, j" }}</small>
     <p>{{ p.contenu }}</p>
